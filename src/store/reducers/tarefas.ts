@@ -7,7 +7,15 @@ type TarefasState = {
 }
 
 const initialState: TarefasState = {
-  itens: []
+  itens: [
+    {
+      id: 1,
+      titulo: 'Tarefa Exemplo',
+      prioridade: enums.Prioridade.URGENTE,
+      status: enums.Status.CONCLUIDA,
+      descricao: 'Exibindo tarefa de exemplo'
+    }
+  ]
 }
 
 const tarefasSlice = createSlice({
