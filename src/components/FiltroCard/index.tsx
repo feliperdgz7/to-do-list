@@ -18,7 +18,7 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
     const mesmoCriterio = filtro.criterio === criterio
     const mesmoValor = filtro.valor === valor
 
-    return mesmoCriterio && mesmoValor && filtro.termo === ''
+    return mesmoCriterio && mesmoValor
   }
 
   const contarTarefas = () => {
